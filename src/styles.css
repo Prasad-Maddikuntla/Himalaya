@@ -1,0 +1,371 @@
+@media only screen and (max-width: 500px) {
+  .home {
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(255, 183, 0);
+    width: 425px;
+    height: 100vh;
+    /* margin-top: -30px; */
+  }
+  .title {
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 100px; */
+    text-shadow: 2px 2px 4px WHITE;
+    letter-spacing: 5px;
+  }
+  .logo {
+    width: 300px;
+    margin-left: 70px;
+    filter: drop-shadow(2px 2px 3px white);
+  }
+  .login {
+    background-color: red;
+    min-width: 35%;
+    height: 50px;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    /* margin: 6%; */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .blocks-main {
+    
+    /* background-image: url("https://wallpaperaccess.com/full/2003940.jpg"); */
+    height: 100vh;
+    width: 100vw;
+    /* margin-top: -60px; */
+  }
+  /* Styling for the loading overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.loading-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styling for the spinner */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+  .blocks {
+    margin-top: 100px;
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 400px;
+    align-items: centre;
+    column-gap: 50px;
+    row-gap: 50px;
+
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .block {
+    font-size: 40px;
+    background-size: 100% 100%;
+    font-weight: bold;
+    display: flex;
+    /* padding: 10px; */
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    flex-basis: 35%;
+    background-color: green;
+    min-width: 30%;
+    height: 70px;
+    color: white;
+    font-weight: bolder;
+    /* padding: 30px; */
+    margin: 6%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .butts {
+    /* margin-top: 60px; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .butt {
+    background-color: red;
+    min-width: 30%;
+    height: 50px;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 6%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    /* max-width: 130px;
+     min-height: 0px; 
+    border-radius: 10px;
+    background-color: burlywood;
+    background-image: url("./images/button2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    color: darkred;
+    margin: 30px;
+    padding: 20px;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 0px 0px 5px 3px black; */
+  }
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .popup-inner {
+    min-width:80%;
+    /* background-color: #b3d4fc; */
+    background-color: cornsilk;
+    /* max-width: 90%; */
+    /* max-height: 90%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 25%;
+    overflow: auto;
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .popup-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .popup-input {
+    padding: 10px;
+    font-size: 16px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+  }
+  .err{
+    color: red;
+  }
+  .popup-buttons {
+    display: flex;
+    min-width: 60%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .close-btn{
+    background-color: red;
+    height: 40px;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .cfn-addblock{
+    background-color: blue;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .popup-button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .popup-button-cancel {
+    background-color: #ccc;
+  }
+  
+  .popup-button-add {
+    background-color: #1e90ff;
+  }
+  .head{
+   padding: 30px 60px;
+   color:#683414;
+   letter-spacing: 3px;
+   font-size: 80px;
+   text-shadow: 4px 4px 5px black;
+
+  }
+ .home-button{
+  width:70px;
+  height: 70px;
+  padding: 30px 60px;
+  margin-top: 60px;
+  
+ }
+ .rmhead{
+  display: flex;
+  justify-content: space-between;
+ }
+ .rooms{
+
+  padding-top: 30px;
+ }
+ .room{
+  display: flex;
+  justify-content: space-between;
+  background-color: #683414;
+  color: #fff;
+  padding: 10px;
+  margin: 20px;
+ }
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    row-gap: 20px;
+  }
+  input {
+    height: 40px;
+  }
+  .addtenant {
+    height: 60px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+  /* th{
+    border: 1px solid black;
+  } */
+  table,
+  th,
+  td {
+    border: 1px solid;
+  }
+}
+/* .addblock{
+width: 110px;
+} */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tenn{
+  display: flex;
+  column-gap: 10px;
+}
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  text-align: center;
+}
+
+.popup-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #0062cc;
+}
+
+
+.room.selected {
+  /* Selected button styles */
+  padding: 15px;
+  margin: 2.5px;
+  background-color: #b3d4fc;
+  border: none;
+  border-radius: 7.5px;
+}
+body{
+  margin: 0px;
+  background-color: cornsilk;
+}
+h1{
+  margin-top: 0;
+}
